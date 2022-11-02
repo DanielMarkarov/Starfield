@@ -75,7 +75,11 @@ class Oddball extends particle
   
   void show()
   {
-  
+    stroke(255);
+    ellipse(myX,    myY    , 10, 10);
+    ellipse(myX -2, myY - 2, 2 , 2);
+    ellipse(myX +2, myY - 2, 2 , 2);
+    rect   (myX -3, myY + 2, 5 , 1);
   }
 }
 
