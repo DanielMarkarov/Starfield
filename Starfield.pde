@@ -14,7 +14,7 @@ void draw()
 {
  noStroke();
  
- for(int i = 0; i < boom.length; i++) 
+ for(int i = 0; i < organism.length; i++) 
  {
    organism[i].move();
    organism[i].show();
