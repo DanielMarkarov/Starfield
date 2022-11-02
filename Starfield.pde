@@ -13,9 +13,6 @@ void setup()
 void draw()
 {
  noStroke();
- frameRate(144);
- fill(0, 0, 0, 15);
- rect(0, 0, 1000, 1000);
  
  for(int i = 0; i < boom.length; i++) 
  {
