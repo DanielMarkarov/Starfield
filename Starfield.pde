@@ -51,8 +51,8 @@ class Particle
  
 class Oddball extends particle
 {
-//  int modifierX = 1;
-//  int modifierY = 1;
+  int modifierX = 1;
+  int modifierY = 1;
   oddball()
   {
     myX = 500;
@@ -64,10 +64,10 @@ class Oddball extends particle
     myX += (modifierX)*(int)(Math.random()*9)-4;;
     myY += (modifierY)*(int)(Math.random()*9)-4;
     
-   // if(myX >= 1000){ modifierX = -1;}
-  //  if(myX <= 0)   { modifierX =  1;}
-  //  if(myY >= 1000){ modifierY = -1;}
- //   if(myY <= 0)   { modifierY =  1;}
+    if(myX >= 1000){ modifierX = -1;}
+    if(myX <= 0)   { modifierX =  1;}
+    if(myY >= 1000){ modifierY = -1;}
+    if(myY <= 0)   { modifierY =  1;}
   }
   
   void show()
