@@ -49,7 +49,7 @@ class Particle
    }
  }
  
-class Oddball extends particle
+class oddball extends particle
 {
   int modifierX = 1;
   int modifierY = 1;
