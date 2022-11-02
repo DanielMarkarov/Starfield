@@ -20,7 +20,7 @@ void draw()
    organism[i].show();
  }
 
-class Particle
+class particle
 {
   double myX, myY, mySize, speed, myAngle;
   int myColor;
