@@ -4,22 +4,22 @@ void setup()
 {
  size (1000, 1000);
  background(0);
- for (int i = 0; i < organism.length-1; i++) 
+ for (int i = 1; i < organism.length-1; i++) 
  {
    organism[i] = new particle();
-   organism[300] = new oddball();
+   organism[0] = new oddball();
  }
-
+}
 void draw()
 {
  noStroke();
  
- for(int i = 0; i < organism.length; i++) 
+ for(int i = 0; i < organism.length-1; i++) 
  {
    organism[i].move();
    organism[i].show();
  }
-
+}
 class particle
 {
   double myX, myY, mySize, speed, myAngle;
@@ -31,7 +31,7 @@ class particle
     myY = 500.0;
     myAngle = Math.random()* 2 * Math.PI;
     mySize = 3;
-    speed = Math.random()*10;
+    speed = Math.random()*50;
     myColor = color((int)(Math.random()*255+40), (int)(Math.random()*46+200), (int)(Math.random()*96+200));
    }
    
@@ -72,12 +72,15 @@ class oddball extends particle
   
   void show()
   {
-    stroke(255);
-    ellipse(myX,    myY    , 10, 10);
-    ellipse(myX -2, myY - 2, 2 , 2);
-    ellipse(myX +2, myY - 2, 2 , 2);
-    rect   (myX -3, myY + 2, 5 , 1);
-  }
+fill(255, 0, 0);    
+    ellipse((float)myX,(float)myY, 50, 50);
+    /*
+    ellipse((float)myX,    (float)myY    , 50, 50);
+    ellipse((float)myX -2, (float)myY - 2, 2 , 2);
+    ellipse((float)myX +2, (float)myY - 2, 2 , 2);
+    rect   ((float)myX -3, (float)myY + 2, 5 , 1);
+*/  
 }
-
-
+  
+  
+}
