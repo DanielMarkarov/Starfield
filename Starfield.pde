@@ -31,7 +31,7 @@ class particle
     myY = 500.0;
     myAngle = Math.random()* 2 * Math.PI;
     mySize = 3;
-    speed = Math.random()*50;
+    speed = Math.random()*50 + 25;
     myColor = color((int)(Math.random()*255+40), (int)(Math.random()*46+200), (int)(Math.random()*96+200));
    }
    
